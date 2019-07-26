@@ -1,11 +1,9 @@
-//bubble sort array of numbers
+import { Sorter } from "./Sorter";
+import { NumbersCollection } from "./NumbersCollection";
+import { CharactersCollection } from "./CharactersCollection";
 
-class Sorter {
-  collection: number[];
 
-  constructor(collection: number[]) {
-    this.collection = collection;
-  }
-}
-
-const sorter = new Sorter ([10, 3, -5, 0])
+const charactersCollection = new CharactersCollection("Xaaayb");
+const sorter = new Sorter(charactersCollection);
+sorter.sort();
+console.log(charactersCollection.data);

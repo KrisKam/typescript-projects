@@ -1,9 +1,8 @@
 "use strict";
-//bubble sort array of numbers
-var Sorter = /** @class */ (function () {
-    function Sorter(collection) {
-        this.collection = collection;
-    }
-    return Sorter;
-}());
-var sorter = new Sorter([10, 3, -5, 0]);
+Object.defineProperty(exports, "__esModule", { value: true });
+var Sorter_1 = require("./Sorter");
+var CharactersCollection_1 = require("./CharactersCollection");
+var charactersCollection = new CharactersCollection_1.CharactersCollection("Xaaayb");
+var sorter = new Sorter_1.Sorter(charactersCollection);
+sorter.sort();
+console.log(charactersCollection.data);
