@@ -1,9 +1,9 @@
-//interface tells you how you can be eligible for sorting
-interface Sortable {
-  length: number;
-  compare(leftIndex: number, rightIndex: number): boolean;
-  swap(leftIndex: number, rightIndex: number): void;
-}
+//interface tells you how you can be eligible for sorting.  Once changed Sorter to an abstract class, no longer need the Interface.
+// interface Sortable {
+//   length: number;
+//   compare(leftIndex: number, rightIndex: number): boolean;
+//   swap(leftIndex: number, rightIndex: number): void;
+// }
 
 export abstract class Sorter {
   abstract compare(leftIndex: number, rightIndex: number): boolean;
